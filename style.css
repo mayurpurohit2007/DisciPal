@@ -1,0 +1,176 @@
+/* Google Fonts & Colorful Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #6C63FF;
+  --secondary: #FF6584;
+  --accent: #00C9A7;
+  --dark: #2D3748;
+  --light: #F8F9FA;
+}
+
+/* Animated Gradient Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #f5f7fa, #c3cfe2, #f5f7fa);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: var(--dark);
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header with Colorful Shadow */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--dark);
+  opacity: 0.8;
+}
+
+/* Card Design with Hover Effects */
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.1);
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 4px solid var(--primary);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(108, 99, 255, 0.2);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Colorful Buttons */
+button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#markDone {
+  background: linear-gradient(to right, var(--accent), #00D4FF);
+}
+
+#newQuote {
+  background: linear-gradient(to right, #FF9A8B, #FF6B95);
+}
+
+/* Input Styling */
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Goal List with Colorful Delete */
+#goalList li {
+  padding: 12px;
+  background: var(--light);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+#goalList li:hover {
+  background: #EDF2F7;
+}
+
+.delete {
+  color: #FF6584;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.delete:hover {
+  transform: scale(1.2);
+}
+
+/* Progress Bar Animation */
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background: #E2E8F0;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, var(--accent), #00D4FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: width 0.5s ease-out;
+  border-radius: 15px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--dark);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisciPal – Your Personal Discipline Coach</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-user-shield"></i> DisciPal</h1>
+        <p>Your Personal Discipline Coach</p>
+    </header>
+
+    <main>
+        <!-- Goal Tracker -->
+        <section class="card">
+            <h2><i class="fas fa-bullseye"></i> Set Your Goal</h2>
+            <div class="input-group">
+                <input type="text" id="goalInput" placeholder="E.g., Study 2 hours daily">
+                <button id="addGoal"><i class="fas fa-plus"></i> Add</button>
+            </div>
+            <ul id="goalList"></ul>
+        </section>
+
+        <!-- Progress Tracker -->
+        <section class="card">
+            <h2><i class="fas fa-chart-line"></i> Today's Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill">0%</div>
+            </div>
+            <button id="markDone"><i class="fas fa-check"></i> Mark as Done</button>
+        </section>
+
+        <!-- Motivational Quote -->
+        <section class="card">
+            <h2><i class="fas fa-quote-left"></i> Motivational Quote</h2>
+            <p id="quote">"Discipline is choosing between what you want now and what you want most."</p>
+            <button id="newQuote"><i class="fas fa-sync-alt"></i> New Quote</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 DisciPal | Stay Focused, Stay Disciplined!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
